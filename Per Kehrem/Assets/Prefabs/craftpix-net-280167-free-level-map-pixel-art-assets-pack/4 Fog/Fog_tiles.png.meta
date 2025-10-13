@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 8ebcd435c7821d441889e50f675aa9fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4907320666063014371
+    second: Fog_tiles_0
+  - first:
+      213: 1374927850906747156
+    second: Fog_tiles_1
+  - first:
+      213: -6003067407045930141
+    second: Fog_tiles_2
+  - first:
+      213: -7125734754176411601
+    second: Fog_tiles_3
+  - first:
+      213: 510379905035324251
+    second: Fog_tiles_4
+  - first:
+      213: 4749879914620847126
+    second: Fog_tiles_5
+  - first:
+      213: 1113618193723230496
+    second: Fog_tiles_6
+  - first:
+      213: -3453696962557634668
+    second: Fog_tiles_7
+  - first:
+      213: -8945450618965673215
+    second: Fog_tiles_8
+  - first:
+      213: 5649711114072340661
+    second: Fog_tiles_9
+  - first:
+      213: -1278321685775509963
+    second: Fog_tiles_10
+  - first:
+      213: 959222024843760825
+    second: Fog_tiles_11
+  - first:
+      213: -5787303390990031075
+    second: Fog_tiles_12
+  - first:
+      213: 8502457272142864007
+    second: Fog_tiles_13
+  - first:
+      213: -7464628076017171857
+    second: Fog_tiles_14
+  - first:
+      213: -7662008568435009221
+    second: Fog_tiles_15
+  - first:
+      213: -8273830617141218430
+    second: Fog_tiles_16
+  - first:
+      213: -5123439677800773641
+    second: Fog_tiles_17
+  - first:
+      213: 9029238451003508208
+    second: Fog_tiles_18
+  - first:
+      213: -3907543177026992055
+    second: Fog_tiles_19
+  - first:
+      213: 2047194979454784210
+    second: Fog_tiles_20
+  - first:
+      213: -7702948664801932073
+    second: Fog_tiles_21
+  - first:
+      213: -286923611825594634
+    second: Fog_tiles_22
+  - first:
+      213: -8258540232585263437
+    second: Fog_tiles_23
+  - first:
+      213: -7810002213479915012
+    second: Fog_tiles_24
+  - first:
+      213: 7766490369963215257
+    second: Fog_tiles_25
+  - first:
+      213: -392080762050429963
+    second: Fog_tiles_26
+  - first:
+      213: 1517825248193984970
+    second: Fog_tiles_27
+  - first:
+      213: 982357113176244853
+    second: Fog_tiles_28
+  - first:
+      213: 2442911482707026340
+    second: Fog_tiles_29
+  - first:
+      213: -2019728438847434445
+    second: Fog_tiles_30
+  - first:
+      213: -4535966618020512994
+    second: Fog_tiles_31
+  - first:
+      213: -1550107201383447342
+    second: Fog_tiles_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fog_tiles_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 116
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d167164bad1b5ebb0800000000000000
+      internalID: -4907320666063014371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 42
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41186118899b41310800000000000000
+      internalID: 1374927850906747156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 111
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3635d48bff1d0bca0800000000000000
+      internalID: -6003067407045930141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_3
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 115
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28d8adaefd4c1d90800000000000000
+      internalID: -7125734754176411601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 116
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bc02cc1db351700800000000000000
+      internalID: 510379905035324251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 118
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6140dbccd96fae140800000000000000
+      internalID: 4749879914620847126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_6
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 111
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0290944d8dd547f00800000000000000
+      internalID: 1113618193723230496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 115
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49718e839e00210d0800000000000000
+      internalID: -3453696962557634668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_8
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 116
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bb0cc9e006bd380800000000000000
+      internalID: -8945450618965673215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_9
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 118
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8bbd5235ec76e40800000000000000
+      internalID: 5649711114072340661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 114
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5361caa133d724ee0800000000000000
+      internalID: -1278321685775509963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 113
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b41b837957df4d00800000000000000
+      internalID: 959222024843760825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_12
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 90
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1720a47a3e5fafa0800000000000000
+      internalID: -5787303390990031075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e130057dbcef570800000000000000
+      internalID: 8502457272142864007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_14
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 109
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62c69c6050586890800000000000000
+      internalID: -7464628076017171857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 103
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b399e645dc31ba590800000000000000
+      internalID: -7662008568435009221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 94
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283fb8de3e27d2d80800000000000000
+      internalID: -8273830617141218430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_17
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 97
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f70b8812c2e5e8b0800000000000000
+      internalID: -5123439677800773641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_18
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 91
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5cc50488c4e4d70800000000000000
+      internalID: 9029238451003508208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9480eccfe2e95c9c0800000000000000
+      internalID: -3907543177026992055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 89
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d29d50ccf8196c10800000000000000
+      internalID: 2047194979454784210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_21
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 81
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc49675001a91590800000000000000
+      internalID: -7702948664801932073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_22
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 84
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe9677ce74a40cf0800000000000000
+      internalID: -286923611825594634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_23
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 71
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6cb710a65c36d80800000000000000
+      internalID: -8258540232585263437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_24
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 77
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1e382bd5c4d9390800000000000000
+      internalID: -7810002213479915012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 70
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9994625c7dd18cb60800000000000000
+      internalID: 7766490369963215257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_26
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 71
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb38becf9c0f8af0800000000000000
+      internalID: -392080762050429963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_27
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 77
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9b8bd7506601510800000000000000
+      internalID: 1517825248193984970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 70
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572c275f69802ad00800000000000000
+      internalID: 982357113176244853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1a978ec07f6e120800000000000000
+      internalID: 2442911482707026340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 63
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3319eb39fab78f3e0800000000000000
+      internalID: -2019728438847434445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_31
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 65
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b7bdbb4620d01c0800000000000000
+      internalID: -4535966618020512994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog_tiles_32
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 64
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4c3c196b9ec7ae0800000000000000
+      internalID: -1550107201383447342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Fog_tiles_0: -4907320666063014371
+      Fog_tiles_1: 1374927850906747156
+      Fog_tiles_10: -1278321685775509963
+      Fog_tiles_11: 959222024843760825
+      Fog_tiles_12: -5787303390990031075
+      Fog_tiles_13: 8502457272142864007
+      Fog_tiles_14: -7464628076017171857
+      Fog_tiles_15: -7662008568435009221
+      Fog_tiles_16: -8273830617141218430
+      Fog_tiles_17: -5123439677800773641
+      Fog_tiles_18: 9029238451003508208
+      Fog_tiles_19: -3907543177026992055
+      Fog_tiles_2: -6003067407045930141
+      Fog_tiles_20: 2047194979454784210
+      Fog_tiles_21: -7702948664801932073
+      Fog_tiles_22: -286923611825594634
+      Fog_tiles_23: -8258540232585263437
+      Fog_tiles_24: -7810002213479915012
+      Fog_tiles_25: 7766490369963215257
+      Fog_tiles_26: -392080762050429963
+      Fog_tiles_27: 1517825248193984970
+      Fog_tiles_28: 982357113176244853
+      Fog_tiles_29: 2442911482707026340
+      Fog_tiles_3: -7125734754176411601
+      Fog_tiles_30: -2019728438847434445
+      Fog_tiles_31: -4535966618020512994
+      Fog_tiles_32: -1550107201383447342
+      Fog_tiles_4: 510379905035324251
+      Fog_tiles_5: 4749879914620847126
+      Fog_tiles_6: 1113618193723230496
+      Fog_tiles_7: -3453696962557634668
+      Fog_tiles_8: -8945450618965673215
+      Fog_tiles_9: 5649711114072340661
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
