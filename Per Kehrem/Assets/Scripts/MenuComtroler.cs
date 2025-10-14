@@ -12,7 +12,8 @@ public class MenuComtroler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Tab))
+        Debug.Log("Test");
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             Debug.Log("Tab pressed");
             menuCanvas.SetActive(!menuCanvas.activeSelf);
