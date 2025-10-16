@@ -23,13 +23,4 @@ public class PlayerMovement : MonoBehaviour
         // Move the player
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
     }
-    public Vector2 GetMovement()
-    {
-        return movement;
-    }
-    public void StopMovement()
-    {
-        movement = Vector2.zero;
-    }
-
 }
