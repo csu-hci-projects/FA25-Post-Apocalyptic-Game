@@ -1,0 +1,828 @@
+fileFormatVersion: 2
+guid: 80bb8310d5e903b4d8ec6bc2d885377b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8187004955442944787
+    second: Sprite Sheet - Straw Training Dummy_0
+  - first:
+      213: 7070677519973691044
+    second: Sprite Sheet - Straw Training Dummy_1
+  - first:
+      213: 3801475906555582216
+    second: Sprite Sheet - Straw Training Dummy_2
+  - first:
+      213: 2836288627826957832
+    second: Sprite Sheet - Straw Training Dummy_3
+  - first:
+      213: 8069843798695983053
+    second: Sprite Sheet - Straw Training Dummy_4
+  - first:
+      213: 7244905815350071929
+    second: Sprite Sheet - Straw Training Dummy_5
+  - first:
+      213: 7411248218763363640
+    second: Sprite Sheet - Straw Training Dummy_6
+  - first:
+      213: 6227480267947287485
+    second: Sprite Sheet - Straw Training Dummy_7
+  - first:
+      213: -6684681990085783712
+    second: Sprite Sheet - Straw Training Dummy_8
+  - first:
+      213: -5188912487563543202
+    second: Sprite Sheet - Straw Training Dummy_9
+  - first:
+      213: -8506025950143974419
+    second: Sprite Sheet - Straw Training Dummy_10
+  - first:
+      213: 3586880438193929767
+    second: Sprite Sheet - Straw Training Dummy_11
+  - first:
+      213: 8614533870890530556
+    second: Sprite Sheet - Straw Training Dummy_12
+  - first:
+      213: -1862126446229595263
+    second: Sprite Sheet - Straw Training Dummy_13
+  - first:
+      213: -5653625841713978791
+    second: Sprite Sheet - Straw Training Dummy_14
+  - first:
+      213: -3988203813915543415
+    second: Sprite Sheet - Straw Training Dummy_15
+  - first:
+      213: 7310268396791135901
+    second: Sprite Sheet - Straw Training Dummy_16
+  - first:
+      213: -744496984531647904
+    second: Sprite Sheet - Straw Training Dummy_17
+  - first:
+      213: 1947313357041452274
+    second: Sprite Sheet - Straw Training Dummy_18
+  - first:
+      213: -3402335699490674133
+    second: Sprite Sheet - Straw Training Dummy_19
+  - first:
+      213: -6786319328918124499
+    second: Sprite Sheet - Straw Training Dummy_20
+  - first:
+      213: -2759037133135337327
+    second: Sprite Sheet - Straw Training Dummy_21
+  - first:
+      213: 3184290830544823392
+    second: Sprite Sheet - Straw Training Dummy_22
+  - first:
+      213: -5006672816683311979
+    second: Sprite Sheet - Straw Training Dummy_23
+  - first:
+      213: 3496631578046055545
+    second: Sprite Sheet - Straw Training Dummy_24
+  - first:
+      213: 4248718531874786158
+    second: Sprite Sheet - Straw Training Dummy_25
+  - first:
+      213: -2363674051403032650
+    second: Sprite Sheet - Straw Training Dummy_26
+  - first:
+      213: -2553428635464997682
+    second: Sprite Sheet - Straw Training Dummy_27
+  - first:
+      213: -3603672495723416473
+    second: Sprite Sheet - Straw Training Dummy_28
+  - first:
+      213: 6596302767323732900
+    second: Sprite Sheet - Straw Training Dummy_29
+  - first:
+      213: 3688272206715911985
+    second: Sprite Sheet - Straw Training Dummy_30
+  - first:
+      213: 8711466052624967764
+    second: Sprite Sheet - Straw Training Dummy_31
+  - first:
+      213: 1381864320671249398
+    second: Sprite Sheet - Straw Training Dummy_32
+  - first:
+      213: -8069471835044277880
+    second: Sprite Sheet - Straw Training Dummy_33
+  - first:
+      213: 3138752244471284358
+    second: Sprite Sheet - Straw Training Dummy_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b1a8f51a51e9170800000000000000
+      internalID: 8187004955442944787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae2f5b0eb7102260800000000000000
+      internalID: 7070677519973691044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8079378223e81c430800000000000000
+      internalID: 3801475906555582216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e1b1eca758c5720800000000000000
+      internalID: 2836288627826957832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7b926dd28ddff60800000000000000
+      internalID: 8069843798695983053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9725a1334731b8460800000000000000
+      internalID: 7244905815350071929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83503ad0dfa0ad660800000000000000
+      internalID: 7411248218763363640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3a0c02f447c6650800000000000000
+      internalID: 6227480267947287485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_8
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f4c70a52d3b33a0800000000000000
+      internalID: -6684681990085783712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5dbf28a5974df7b0800000000000000
+      internalID: -5188912487563543202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3f967177684f980800000000000000
+      internalID: -8506025950143974419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72eb85221c827c130800000000000000
+      internalID: 3586880438193929767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf63000f9e8fc8770800000000000000
+      internalID: 8614533870890530556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bdf95fcd56826e0800000000000000
+      internalID: -1862126446229595263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9526bab40494a81b0800000000000000
+      internalID: -5653625841713978791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988b4bbf2cd07a8c0800000000000000
+      internalID: -3988203813915543415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9eff7b106a437560800000000000000
+      internalID: 7310268396791135901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_17
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06244a4efe30ba5f0800000000000000
+      internalID: -744496984531647904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_18
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f444d05e2f360b10800000000000000
+      internalID: 1947313357041452274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_19
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a6a3925b978c0d0800000000000000
+      internalID: -3402335699490674133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28c77b968622d1a0800000000000000
+      internalID: -6786319328918124499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_21
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1982b5d685ee5b9d0800000000000000
+      internalID: -2759037133135337327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0646828a3afd03c20800000000000000
+      internalID: 3184290830544823392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_23
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c9cf68999b48ab0800000000000000
+      internalID: -5006672816683311979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_24
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97449dfe4e7868030800000000000000
+      internalID: 3496631578046055545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Sheet - Straw Training Dummy_25
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b040b7efa76fa30800000000000000
+      internalID: 4248718531874786158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 11000aff16db2f14491d5e0e86c07f52
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sprite Sheet - Straw Training Dummy_0: 8187004955442944787
+      Sprite Sheet - Straw Training Dummy_1: 7070677519973691044
+      Sprite Sheet - Straw Training Dummy_10: -8506025950143974419
+      Sprite Sheet - Straw Training Dummy_11: 3586880438193929767
+      Sprite Sheet - Straw Training Dummy_12: 8614533870890530556
+      Sprite Sheet - Straw Training Dummy_13: -1862126446229595263
+      Sprite Sheet - Straw Training Dummy_14: -5653625841713978791
+      Sprite Sheet - Straw Training Dummy_15: -3988203813915543415
+      Sprite Sheet - Straw Training Dummy_16: 7310268396791135901
+      Sprite Sheet - Straw Training Dummy_17: -744496984531647904
+      Sprite Sheet - Straw Training Dummy_18: 1947313357041452274
+      Sprite Sheet - Straw Training Dummy_19: -3402335699490674133
+      Sprite Sheet - Straw Training Dummy_2: 3801475906555582216
+      Sprite Sheet - Straw Training Dummy_20: -6786319328918124499
+      Sprite Sheet - Straw Training Dummy_21: -2759037133135337327
+      Sprite Sheet - Straw Training Dummy_22: 3184290830544823392
+      Sprite Sheet - Straw Training Dummy_23: -5006672816683311979
+      Sprite Sheet - Straw Training Dummy_24: 3496631578046055545
+      Sprite Sheet - Straw Training Dummy_25: 4248718531874786158
+      Sprite Sheet - Straw Training Dummy_3: 2836288627826957832
+      Sprite Sheet - Straw Training Dummy_4: 8069843798695983053
+      Sprite Sheet - Straw Training Dummy_5: 7244905815350071929
+      Sprite Sheet - Straw Training Dummy_6: 7411248218763363640
+      Sprite Sheet - Straw Training Dummy_7: 6227480267947287485
+      Sprite Sheet - Straw Training Dummy_8: -6684681990085783712
+      Sprite Sheet - Straw Training Dummy_9: -5188912487563543202
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 323464
+  packageName: Straw Training Dummy - Pixel Art
+  packageVersion: 1.0
+  assetPath: Assets/War/Straw Training Dummy - Pixel Art/Sprites/Sprite Sheet - Straw
+    Training Dummy.png
+  uploadId: 764380
