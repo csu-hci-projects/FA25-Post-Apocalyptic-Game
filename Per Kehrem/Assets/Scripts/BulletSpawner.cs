@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    public GameObject bulletPrefab;
+    public Transform spawnPoint;
+    public PhaseManager phaseManager;
+
+    void Start(){
+        SpawnBullet();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SpawnBullet()
     {
-        
+        Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 }
