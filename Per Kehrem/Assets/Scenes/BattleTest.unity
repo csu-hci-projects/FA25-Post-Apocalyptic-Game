@@ -1880,7 +1880,7 @@ GameObject:
   - component: {fileID: 1928245839}
   - component: {fileID: 1928245838}
   m_Layer: 5
-  m_Name: HealthBar (1)
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2208,9 +2208,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   Health: 0
   MaxHealth: 0
-  Width: 0
-  Height: 0
-  healthBar: {fileID: 0}
+  Width: 100
+  Height: 100
+  healthBar: {fileID: 1928245837}
 --- !u!114 &2143315739
 MonoBehaviour:
   m_ObjectHideFlags: 0
