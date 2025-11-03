@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dummy : MonoBehaviour
+public class Dummy : MonoBehaviour, IInteractable
 {
     public NPCDialogue dialogueData;
     public GameObject dialoguePanel;
@@ -14,26 +14,7 @@ public class Dummy : MonoBehaviour
 
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
-    private bool playerInRange = false;
-    private void OnTriggerEnter(Collider other)
-    {
-    if (other.CompareTag("Player"))
-        playerInRange = true;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-    if (other.CompareTag("Player"))
-        playerInRange = false;
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
-        {
-            Interact();
-        }
-    }
+    
     public bool CanInteract()
     {
         return !isDialogueActive;
