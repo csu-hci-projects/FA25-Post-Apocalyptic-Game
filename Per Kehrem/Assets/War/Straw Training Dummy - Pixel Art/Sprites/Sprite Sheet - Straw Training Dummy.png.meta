@@ -1,13 +1,5 @@
 fileFormatVersion: 2
 guid: 80bb8310d5e903b4d8ec6bc2d885377b
-AssetOrigin:
-  serializedVersion: 1
-  productId: 323464
-  packageName: Straw Training Dummy - Pixel Art
-  packageVersion: 1.0
-  assetPath: Assets/War/Straw Training Dummy - Pixel Art/Sprites/Sprite Sheet - Straw
-    Training Dummy.png
-  uploadId: 764380
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -826,3 +818,11 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 323464
+  packageName: Straw Training Dummy - Pixel Art
+  packageVersion: 1.0
+  assetPath: Assets/War/Straw Training Dummy - Pixel Art/Sprites/Sprite Sheet - Straw
+    Training Dummy.png
+  uploadId: 764380

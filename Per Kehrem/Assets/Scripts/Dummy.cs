@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dummy : MonoBehaviour, IInteractable
+public class Dummy : MonoBehaviour
 {
     public NPCDialogue dialogueData;
     public GameObject dialoguePanel;
@@ -14,7 +14,26 @@ public class Dummy : MonoBehaviour, IInteractable
 
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
+    private bool playerInRange = false;
+    private void OnTriggerEnter(Collider other)
+    {
+    if (other.CompareTag("Player"))
+        playerInRange = true;
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+    if (other.CompareTag("Player"))
+        playerInRange = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
+        {
+            Interact();
+        }
+    }
     public bool CanInteract()
     {
         return !isDialogueActive;
@@ -34,6 +53,9 @@ public class Dummy : MonoBehaviour, IInteractable
     }
     void StartDialogue()
     {
+        if (dialogueData.dialogueLines.Length == 0)
+            return; 
+
         isDialogueActive = true;
         dialogueIndex = 0;
 
@@ -53,7 +75,11 @@ public class Dummy : MonoBehaviour, IInteractable
             dialogueText.SetText(dialogueData.dialogueLines[dialogueIndex]);
             isTyping = false;
         }
-        else if (++dialogueIndex < dialogueData.dialogueLines.Length)
+        else
+        {
+            dialogueIndex++;
+            
+            if (dialogueIndex < dialogueData.dialogueLines.Length)
             {
                 StartCoroutine(TypeLine());
 
@@ -62,16 +88,19 @@ public class Dummy : MonoBehaviour, IInteractable
             {
                 EndDialogue();
             }
+        }
     }
     IEnumerator TypeLine()
-    {
+{
     isTyping = true;
-    dialogueText.SetText("");
+    dialogueText.text = dialogueData.dialogueLines[dialogueIndex];
+    dialogueText.maxVisibleCharacters = 0;
 
+    int totalChars = dialogueText.text.Length;
 
-    foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
+    for (int i = 0; i <= totalChars; i++)
     {
-        dialogueText.text += letter;
+        dialogueText.maxVisibleCharacters = i;
         yield return new WaitForSeconds(dialogueData.typingSpeed);
     }
 
@@ -82,7 +111,7 @@ public class Dummy : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(dialogueData.autoProgressDelay);
         NextLine();
     }
-    }
+}
 
     public void EndDialogue()
 
