@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetHealth(Health);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("HayBale"))
         {

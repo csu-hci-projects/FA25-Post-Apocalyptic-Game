@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Tile
+  - HayBale
   layers:
   - Default
   - TransparentFX
