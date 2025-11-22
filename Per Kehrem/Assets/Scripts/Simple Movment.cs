@@ -13,14 +13,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Get input from keyboard
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
     }
 
     void FixedUpdate()
     {
-        // Move the player
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
     }
 }

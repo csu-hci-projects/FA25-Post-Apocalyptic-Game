@@ -1949,7 +1949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1216382246
 Transform:
   m_ObjectHideFlags: 0
@@ -2112,8 +2112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85605078a2d255b458838b6082f6c338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  bulletPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  bulletPrefab: {fileID: 1540118496}
+  spawnPoint: {fileID: 1540118497}
   phaseManager: {fileID: 0}
 --- !u!4 &1664328630
 Transform:
@@ -2123,12 +2123,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664328628}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2845.5286, y: -29.20835, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 183.74146, y: -305.23065, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1690122617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690122616
 GameObject:
@@ -2145,7 +2145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1690122617
 Transform:
   m_ObjectHideFlags: 0
@@ -2163,6 +2163,7 @@ Transform:
   - {fileID: 876729047}
   - {fileID: 1777601294}
   - {fileID: 1777742014}
+  - {fileID: 1664328630}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1748889688
@@ -2895,4 +2896,3 @@ SceneRoots:
   - {fileID: 1451926123}
   - {fileID: 1216382246}
   - {fileID: 233962799}
-  - {fileID: 1664328630}
