@@ -4,27 +4,34 @@ public class PlayerHealth : MonoBehaviour
 {
     public float Health, MaxHealth;
     [SerializeField] private HealthBar healthBar;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         healthBar.SetMaxHealth(MaxHealth);
+        Health = MaxHealth;
+        healthBar.SetHealth(Health);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(Input.GetKeyDown("d")){
-            SetHealth(-20f);
-        }
-        if(Input.GetKeyDown("g")){
-            SetHealth(20f);
+        if (collision.gameObject.CompareTag("HayBale"))
+        {
+            TakeDamage(20f);
         }
     }
 
-    public void SetHealth(float healthChange){
-        Health += healthChange;
+    public void TakeDamage(float damage)
+    {
+        Health -= damage;
         Health = Mathf.Clamp(Health, 0, MaxHealth);
+        healthBar.SetHealth(Health);
+    }
 
+    public void Heal(float amount)
+    {
+        Health += amount;
+        Health = Mathf.Clamp(Health, 0, MaxHealth);
         healthBar.SetHealth(Health);
     }
 }
+

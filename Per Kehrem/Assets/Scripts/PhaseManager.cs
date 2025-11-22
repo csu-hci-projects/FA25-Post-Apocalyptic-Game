@@ -13,5 +13,7 @@ public class PhaseManager : MonoBehaviour
     public void ShowAttackPhase(){
         playerPhase.SetActive(false);
         attackPhase.SetActive(true);
+
+        Invoke("ShowPlayerPhase", 10f);
     }
 }
