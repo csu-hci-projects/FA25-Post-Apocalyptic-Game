@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 468541eb9ab02a94fb67ccd4d849438b
+guid: adf62b49a2fc3c64db0f15bf9f1c0368
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -993183575786483884
-    second: Needle_0
+      213: -5245879471327295340
+    second: 155-1557234_biohazard-symbol-pixel-biohazard_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Needle_0
+      name: 155-1557234_biohazard-symbol-pixel-biohazard_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
-        width: 31
-        height: 29
+        y: 0
+        width: 441
+        height: 421
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45f8e78ccc08732f0800000000000000
-      internalID: -993183575786483884
+      spriteID: 498c5092a64e237b0800000000000000
+      internalID: -5245879471327295340
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Needle_0: -993183575786483884
+      155-1557234_biohazard-symbol-pixel-biohazard_0: -5245879471327295340
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
