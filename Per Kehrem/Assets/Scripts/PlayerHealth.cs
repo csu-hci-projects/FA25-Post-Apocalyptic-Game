@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public float Health, MaxHealth;
+    public float Armor; // Armor adds directly to total health display
     [SerializeField] private HealthBar healthBar;
 
     void Start()
@@ -32,6 +33,11 @@ public class PlayerHealth : MonoBehaviour
         Health += amount;
         Health = Mathf.Clamp(Health, 0, MaxHealth);
         healthBar.SetHealth(Health);
+    }
+
+    public void AddArmor(float amount)
+    {
+        Armor += amount;
     }
 }
 
