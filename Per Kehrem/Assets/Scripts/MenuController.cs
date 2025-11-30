@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnitEngine.UI;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
@@ -7,10 +7,11 @@ public class Exit : MonoBehaviour
     [Header("Levels To Load")]
     public string newGameLevel;
     private string levelToLoad;
+    [SerializeField] private GameObject noSavedGameDialog = null;
 
     public void NewGameDialogYes()
     {
-        SceneManager.LoadScene(newGameLevel)
+        SceneManager.LoadScene(newGameLevel);
     }
 
     public void LoadGameDialogYes()
@@ -18,6 +19,16 @@ public class Exit : MonoBehaviour
         if(PlayerPrefs.HasKey("SavedLevel"))
         {
             levelToLoad = PlayerPrefs.GetString("SavedLevel");
+            SceneManager.LoadScene(levelToLoad);
         }
+        else
+        {
+            noSavedGameDialog.SetActive(true);
+        }
+    }
+
+    public void ExitButton()
+    {
+        Application.Quit();
     }
 }
