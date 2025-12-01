@@ -8,6 +8,10 @@ public class MenuComtroler : MonoBehaviour
     public GameObject[] tabs;
     [Tooltip("Name of the default tab to show when the menu opens (case-insensitive).")]
     public string defaultTabName = "Player";
+    
+    [Header("Audio")]
+    [Tooltip("Master volume slider (0-1).")]
+    public UnityEngine.UI.Slider volumeSlider;
 
     void Start()
     {
@@ -16,6 +20,7 @@ public class MenuComtroler : MonoBehaviour
 
         DeactivateAllTabs();
         ActivateDefaultTab();
+        InitializeVolumeSlider();
     }
 
     void Update()
@@ -25,6 +30,56 @@ public class MenuComtroler : MonoBehaviour
             Debug.Log("Tab pressed");
             ToggleMenu();
         }
+    }
+
+    // Initialize volume slider
+    private void InitializeVolumeSlider()
+    {
+        if (volumeSlider == null) return;
+        volumeSlider.minValue = 0f;
+        volumeSlider.maxValue = 1f;
+        volumeSlider.value = AudioListener.volume;
+        volumeSlider.onValueChanged.AddListener(SetVolume);
+    }
+
+    // Set master volume
+    public void SetVolume(float value)
+    {
+        AudioListener.volume = Mathf.Clamp01(value);
+    }
+
+    // Unstuck the player by resetting position to spawn point or safe location
+    public void UnstuckPlayer()
+    {
+        Transform playerTransform = GameObject.FindGameObjectWithTag("Player")?.transform;
+        if (playerTransform == null)
+        {
+            Debug.LogWarning("Player not found. Make sure the player GameObject has the 'Player' tag.");
+            return;
+        }
+
+        // Reset to spawn point or safe location (adjust coordinates as needed)
+        playerTransform.position = new Vector3(0, 1, 0);
+        playerTransform.rotation = Quaternion.identity;
+        Debug.Log("Player unstuck and reset to safe position.");
+    }
+
+    // Quit to main menu
+    public void QuitToMenu()
+    {
+        Time.timeScale = 1f; // Ensure game time is running
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameMenu");
+    }
+
+    // Quit the application
+    public void QuitGame()
+    {
+        Time.timeScale = 1f; // Ensure game time is running
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
     // Toggle the menu open/closed. When opening, activate the default tab.
