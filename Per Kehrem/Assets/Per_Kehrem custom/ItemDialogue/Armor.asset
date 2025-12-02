@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4544b54bc65efe945b0795185569945c, type: 3}
   m_Name: Armor
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: 
-  npcPortrait: {fileID: 0}
-  dialogueLines: []
+  npcName: Armor
+  npcPortrait: {fileID: -4548992743620234918, guid: 7b595f1e2f40c664ba0267879e2a1748,
+    type: 3}
+  dialogueLines:
+  - A full set of iron armor.
+  - Not perfect, but it gets the job done. Weakens attacks.
   typingSpeed: 0.05
   voiceSounds: {fileID: 0}
   voicePitch: 1

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4544b54bc65efe945b0795185569945c, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: 
-  npcPortrait: {fileID: 0}
-  dialogueLines: []
+  npcName: Axe
+  npcPortrait: {fileID: -5825250732961213246, guid: 4a29f1fbbb864ae4d9e789dfd279a670,
+    type: 3}
+  dialogueLines:
+  - A simple axe. Less damage, but faster to use.
+  - Good for cutting trees. For you, great at snapping necks.
   typingSpeed: 0.05
   voiceSounds: {fileID: 0}
   voicePitch: 1

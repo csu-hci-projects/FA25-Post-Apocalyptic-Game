@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4544b54bc65efe945b0795185569945c, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: 
-  npcPortrait: {fileID: 0}
-  dialogueLines: []
+  npcName: Sword
+  npcPortrait: {fileID: -3753825769889500098, guid: b62beae6b3d56e24aa7231a42d47434c,
+    type: 3}
+  dialogueLines:
+  - 'Standard historical weapon. '
+  - Moderate in both speed and damage, but not in looks my friend.
   typingSpeed: 0.05
   voiceSounds: {fileID: 0}
   voicePitch: 1

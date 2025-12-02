@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4544b54bc65efe945b0795185569945c, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: 
-  npcPortrait: {fileID: 0}
-  dialogueLines: []
+  npcName: Shield
+  npcPortrait: {fileID: -6395364460193760038, guid: 493bef7b9fb01694bb374bed36f252af,
+    type: 3}
+  dialogueLines:
+  - A good old-fashioned shield.
+  - It will block or dampen damaging attacks.
   typingSpeed: 0.05
   voiceSounds: {fileID: 0}
   voicePitch: 1

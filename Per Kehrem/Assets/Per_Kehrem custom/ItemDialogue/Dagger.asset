@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4544b54bc65efe945b0795185569945c, type: 3}
   m_Name: Dagger
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: 
-  npcPortrait: {fileID: 0}
-  dialogueLines: []
+  npcName: Dagger
+  npcPortrait: {fileID: -2486521743634864436, guid: 39f9748cf14b8aa4c86fc73d71636ed3,
+    type: 3}
+  dialogueLines:
+  - A small sword, unfortunately there are no alleyways to use it in.
+  - Small, but extremely quick. See if you can stun your enemy.
   typingSpeed: 0.05
   voiceSounds: {fileID: 0}
   voicePitch: 1

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4544b54bc65efe945b0795185569945c, type: 3}
   m_Name: InvincibiltyStar
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: 
-  npcPortrait: {fileID: 0}
-  dialogueLines: []
+  npcName: InvicibiltiyStar
+  npcPortrait: {fileID: 3276481395067627826, guid: 081eeed9b12ba8b43b4ecde0973cf22e,
+    type: 3}
+  dialogueLines:
+  - A star that makes you temporarily invincible!
+  - Not responsible for any turtle or mushroom related injuries.
   typingSpeed: 0.05
   voiceSounds: {fileID: 0}
   voicePitch: 1

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4544b54bc65efe945b0795185569945c, type: 3}
   m_Name: Labrys
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: 
-  npcPortrait: {fileID: 0}
-  dialogueLines: []
+  npcName: Labrys
+  npcPortrait: {fileID: -8045597487553580685, guid: bc7cbc36a4057a048896591bf0fe5e21,
+    type: 3}
+  dialogueLines:
+  - An ancient weapon, the labrys.
+  - Slower to wield, but packs a greater punch.
   typingSpeed: 0.05
   voiceSounds: {fileID: 0}
   voicePitch: 1

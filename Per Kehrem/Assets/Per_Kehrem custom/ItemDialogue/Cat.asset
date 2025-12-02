@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4544b54bc65efe945b0795185569945c, type: 3}
   m_Name: Cat
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: 
+  npcName: Katterine
   npcPortrait: {fileID: 0}
-  dialogueLines: []
+  dialogueLines:
+  - Hi, my name's Katterine. I'm the main merchant of this odd world.
+  - Despite my bags of money, these items are on the house!
+  - Mostly, you can have three items from each category.
+  - Power-ups on my left, weapons below, and defense items to the side.
+  - Happy hunting friend!
+  - Mrow.
   typingSpeed: 0.05
   voiceSounds: {fileID: 0}
   voicePitch: 1
