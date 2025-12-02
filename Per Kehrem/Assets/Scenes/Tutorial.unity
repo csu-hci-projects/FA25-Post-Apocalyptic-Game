@@ -778,7 +778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69743203}
-  m_Layer: 20
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2266,7 +2266,7 @@ GameObject:
   - component: {fileID: 225598103}
   - component: {fileID: 225598105}
   - component: {fileID: 225598104}
-  m_Layer: 20
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7400,7 +7400,7 @@ GameObject:
   - component: {fileID: 699134816}
   - component: {fileID: 699134818}
   - component: {fileID: 699134817}
-  m_Layer: 20
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9646,7 +9646,7 @@ GameObject:
   - component: {fileID: 918218882}
   - component: {fileID: 918218883}
   - component: {fileID: 918218884}
-  m_Layer: 20
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9809,7 +9809,6 @@ GameObject:
   - component: {fileID: 937482678}
   - component: {fileID: 937482681}
   - component: {fileID: 937482680}
-  - component: {fileID: 937482679}
   m_Layer: 20
   m_Name: Menu
   m_TagString: Untagged
@@ -9838,22 +9837,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &937482679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937482677}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcc4a1fd66b0543469c822332224b3bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MenuComtroler
-  menuCanvas: {fileID: 937482677}
-  tabs: []
-  defaultTabName: Player
-  volumeSlider: {fileID: 0}
 --- !u!114 &937482680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15665,7 +15648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1611362072}
-  m_Layer: 20
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18827,8 +18810,8 @@ RectTransform:
   m_LocalScale: {x: 17, y: 9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2075484526}
   - {fileID: 854592013}
+  - {fileID: 2075484526}
   - {fileID: 1123936883}
   - {fileID: 1002250912}
   m_Father: {fileID: 1586770066}
@@ -20095,7 +20078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2075484526}
   - component: {fileID: 2075484525}
-  m_Layer: 20
+  m_Layer: 5
   m_Name: volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20147,7 +20130,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 918218882}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
