@@ -9,6 +9,8 @@ public class Exit : MonoBehaviour
     [Header("Volume Setting")]
     [SerializeField] private TMP_Text volTextVal = null;
     [SerializeField] private Slider volSlider = null;
+    [SerializeField] private float defaultVolume = 0.5f;
+
     [SerializeField] private GameObject confirmationPrompt = null;
 
     [Header("Levels To Load")]
@@ -37,6 +39,10 @@ public class Exit : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
+
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 
     public void SetVolume(float volume)
@@ -49,6 +55,17 @@ public class Exit : MonoBehaviour
     {
         PlayerPrefs.SetFloat("masterVolume", AudioListener.volume);
         StartCoroutine(ConfirmationBox());
+    }
+
+    public void ResetButton(string MenuType)
+    {
+        if (MenuType == "Audio")
+        {
+            AudioListener.volume = defaultVolume;
+            volSlider.value = defaultVolume;
+            volTextVal.text = (defaultVolume).ToString("0.0") + "%";
+            VolumeApply();
+        }
     }
 
     public IEnumerator ConfirmationBox()
