@@ -9,6 +9,8 @@ public class InventoryManager : MonoBehaviour
     [Tooltip("Assign equipment slots here (Head, Chest, Legs, Hands, Feet, Accessory).")]
     public InventorySlot[] equipmentSlots;
 
+    public GameObject itemUIPrefab;
+
     private PlayerHealth playerHealth;
     private Dictionary<InventorySlot.EquipmentType, Item> equippedItems = new Dictionary<InventorySlot.EquipmentType, Item>();
 
@@ -91,5 +93,69 @@ public class InventoryManager : MonoBehaviour
     public Item GetEquippedItem(InventorySlot.EquipmentType equipmentType)
     {
         return equippedItems[equipmentType];
+    }
+    public void PickupItem(Item worldItem)
+    {
+        if (worldItem == null)
+        {
+            Debug.LogError("PickupItem: worldItem is null!");
+            return;
+        }
+
+        if (itemUIPrefab == null)
+        {
+            Debug.LogError("PickupItem: itemUIPrefab is not assigned!");
+            return;
+        }
+
+        // Instantiate UI item
+        GameObject uiItemObject = Instantiate(itemUIPrefab);
+
+        Item uiItem = uiItemObject.GetComponent<Item>();
+        if (uiItem == null)
+        {
+            Debug.LogError("PickupItem: itemUIPrefab is missing the Item component!");
+            Destroy(uiItemObject);
+            return;
+        }
+
+        // Copy stats so UI version does not share reference with world item
+        uiItem.stats = new Item.ItemStats
+        {
+            itemName = worldItem.stats.itemName,
+            description = worldItem.stats.description,
+            healthBonus = worldItem.stats.healthBonus,
+            armorBonus = worldItem.stats.armorBonus,
+            damageBonus = worldItem.stats.damageBonus,
+            icon = worldItem.stats.icon
+        };
+
+        // Find first empty slot
+        bool addedToInventory = false;
+
+        foreach (InventorySlot slot in inventorySlots)
+        {
+            if (slot != null && slot.GetItem() == null)
+            {
+                slot.SetItem(uiItem);
+                uiItem.transform.SetParent(slot.transform, false);
+                uiItem.SetParentSlot(slot);
+
+                addedToInventory = true;
+                break;
+            }
+        }
+
+        if (!addedToInventory)
+        {
+            Debug.LogWarning("PickupItem: Inventory is full! Dropping item UI object.");
+            Destroy(uiItemObject);
+            return;
+        }
+
+        // Remove world item from scene
+        Destroy(worldItem.gameObject);
+
+        Debug.Log($"Picked up: {uiItem.stats.itemName}");
     }
 }
