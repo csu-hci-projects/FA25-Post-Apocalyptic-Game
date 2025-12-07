@@ -89,13 +89,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   stats:
-    itemName: Speed Boost
-    description: Double speed give you an edge, but be carfeul not to speed into
-      danger
+    itemName: 
+    description: 
     healthBonus: 0
     armorBonus: 0
-    damageBonus: 10
-    icon: {fileID: 3576905869180698672, guid: e8b56492714ae3c49ba4b3ca6abcbec9, type: 3}
+    damageBonus: 0
+    icon: {fileID: 0}
   isEquippable: 0
   equipmentType: 0
   parentSlot: {fileID: 0}
