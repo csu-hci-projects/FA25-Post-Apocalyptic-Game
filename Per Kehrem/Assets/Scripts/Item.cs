@@ -13,11 +13,12 @@ public class Item : MonoBehaviour
         public Sprite icon;
     }
 
-    public ItemStats stats = new ItemStats();
-    public InventorySlot parentSlot;
+     public ItemStats stats = new ItemStats();
 
-    public void SetParentSlot(InventorySlot slot)
-    {
-        parentSlot = slot;
-    }
+    // Add this if it's equippable
+    public bool isEquippable = false;
+    public InventorySlot.EquipmentType equipmentType = InventorySlot.EquipmentType.None;
+
+    public InventorySlot parentSlot;
+    public void SetParentSlot(InventorySlot slot) => parentSlot = slot;
 }
