@@ -32,12 +32,26 @@ public class InventoryManager : MonoBehaviour
         if (item == null) return;
 
         InventorySlot.EquipmentType slotType = item.equipmentType;
-        
-        // Remove previous item stats if there was one
+        // If there's an item already equipped in this slot, remove its stats,
+        // respawn its original world instance and remove the UI representation.
         if (equippedItems[equipmentType] != null)
-            RemoveItemStats(equippedItems[equipmentType]);
+        {
+            Item prev = equippedItems[equipmentType];
+            // remove previous item stats
+            RemoveItemStats(prev);
 
-        // Apply new item stats
+            // respawn the world object where it was (if linked)
+            prev.RespawnWorldInstance();
+
+            // Remove it from its UI slot (if any) and destroy the UI object
+            if (prev.parentSlot != null)
+            {
+                prev.parentSlot.SetItem(null);
+            }
+            Destroy(prev.gameObject);
+        }
+
+        // Apply new item stats and record it as equipped
         equippedItems[equipmentType] = item;
         ApplyItemStats(item);
 
@@ -133,6 +147,9 @@ public class InventoryManager : MonoBehaviour
     uiItem.isEquippable = worldItem.isEquippable;
     uiItem.equipmentType = worldItem.equipmentType;
 
+    // Link the UI item back to the original world instance and disable the world object
+    uiItem.LinkWorldInstance(worldItem.gameObject);
+
     // If equippable, equip directly
     if (uiItem.isEquippable && uiItem.equipmentType != InventorySlot.EquipmentType.None)
     {
@@ -154,7 +171,8 @@ public class InventoryManager : MonoBehaviour
             uiItem.transform.SetParent(targetSlot.transform, false);
         }
 
-        Destroy(worldItem.gameObject);
+        // disable the world instance instead of destroying it so it can be respawned later
+        worldItem.gameObject.SetActive(false);
         Debug.Log($"Equipped: {uiItem.stats.itemName}");
         return; // Done, skip normal inventory
     }
@@ -180,7 +198,8 @@ public class InventoryManager : MonoBehaviour
         return;
     }
 
-    Destroy(worldItem.gameObject);
+    // disable the world instance instead of destroying it so it can be respawned later
+    worldItem.gameObject.SetActive(false);
     Debug.Log($"Picked up: {uiItem.stats.itemName}");
 }
 
