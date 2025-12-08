@@ -5,6 +5,7 @@ public class PlayerHealth : MonoBehaviour
     public float Health, MaxHealth;
     public float Armor; // Armor adds directly to total health display
     [SerializeField] private HealthBar healthBar;
+    private bool isDefending = false;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        float finalDamage = isDefending ? damage * 0.5f : damage;
         Health -= damage;
         Health = Mathf.Clamp(Health, 0, MaxHealth);
         healthBar.SetHealth(Health);
@@ -51,5 +53,17 @@ public class PlayerHealth : MonoBehaviour
             healthBar.SetHealth(Health);
         }
     }
+
+    public void StartDefend()
+    {
+        isDefending = true;
+        Invoke(nameof(StopDefend), 3f);
+    }
+
+    public void StopDefend()
+    {
+        isDefending = false;
+    }
+
 }
 
