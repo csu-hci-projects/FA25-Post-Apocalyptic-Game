@@ -17,7 +17,7 @@ MonoBehaviour:
     type: 3}
   dialogueLines:
   - 'This is the Health Boost! '
-  - When used it will return you to full health!
+  - When used it will double your heath!
   typingSpeed: 0.05
   voiceSounds: {fileID: 0}
   voicePitch: 1
