@@ -70,6 +70,7 @@ public class PhaseManager : MonoBehaviour
     {
         playerPhase.SetActive(false);
         attackPhase.SetActive(false);
+        SceneManager.LoadScene("Selvain");
         Debug.Log("Boss defeated!");
     }
 }
