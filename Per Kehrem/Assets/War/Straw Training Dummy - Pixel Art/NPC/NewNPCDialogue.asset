@@ -17,8 +17,23 @@ MonoBehaviour:
   dialogueLines:
   - Hey watch where you're going!
   - Heh, no worries. I can teach you about this world!
+  - A while ago, in a place called the Old City, a power plant suffered a meltdown.
+  - 'The entire world was destroyed. '
+  - Surrounded by mountains, the nation of Selvain was the most protected.
+  - Not untouched though, so it's good you've come here.
+  - Shakhan.
+  - To get here I'm sure you're familiar with the WASD/arrow controls.
+  - Hit tab to open the menu, it will show you your stats, inventory, map, and settings.
+  - Left click on certain objects to carry them. You can see them in your inventory.
+  - For now, only wearable items like armor go in the equipped category.
+  - 'To talk with characters, or to learn more about items, '
+  - see the red star appear above your head and press 'E'.
+  - 'Don''t worry that the star disappears even when you return to a conversation. '
+  - Just hit 'E' like normal to continue dialogue.
+  - Although make sure your not to far away from the subject either.
+  - For combat, well, there's no better way than to learn by example!
   typingSpeed: 0.05
-  voiceSound: {fileID: 8300000, guid: 399a0fcce4f965f4d842c5da7ab1c7d7, type: 3}
+  voiceSounds: {fileID: 0}
   voicePitch: 1
   autoProgressLines: 0000
   autoProgressDelay: 1.5
