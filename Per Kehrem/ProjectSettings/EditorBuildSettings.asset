@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 728f29d3683a5db4f86d7ad343a9c3dd
+  - enabled: 1
+    path: Assets/Scenes/Selvain.unity
+    guid: 37d3e649d3014a3439e58d305b146c2f
+  - enabled: 1
+    path: Assets/Scenes/DummyBattle.unity
+    guid: b9db3b0e71604d64384e7a4d34f86389
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
