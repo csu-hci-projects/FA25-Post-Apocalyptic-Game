@@ -37,7 +37,19 @@ public class PlayerHealth : MonoBehaviour
 
     public void AddArmor(float amount)
     {
+        // Update armor value and reflect it in MaxHealth so the UI shows the increase.
         Armor += amount;
+
+        // Adjust MaxHealth to include armor change and clamp Health appropriately.
+        MaxHealth += amount;
+        Health = Mathf.Min(Health, MaxHealth);
+
+        // Update health bar to reflect new max and current health.
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(MaxHealth);
+            healthBar.SetHealth(Health);
+        }
     }
 }
 
