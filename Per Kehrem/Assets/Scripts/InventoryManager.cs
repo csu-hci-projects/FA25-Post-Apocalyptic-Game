@@ -74,8 +74,16 @@ public class InventoryManager : MonoBehaviour
 
         if (item.stats.healthBonus > 0)
         {
-            playerHealth.MaxHealth += item.stats.healthBonus;
-            playerHealth.Health = playerHealth.MaxHealth;
+            if (item.stats.healthBonus >= 100)
+            {
+                playerHealth.DoubleMaxHealth();
+            }
+            else
+            {
+                playerHealth.MaxHealth += item.stats.healthBonus;
+                // Only add the bonus to current health, don't heal to full
+                playerHealth.Health = Mathf.Min(playerHealth.Health + item.stats.healthBonus, playerHealth.MaxHealth);
+            }
         }
 
         if (item.stats.armorBonus > 0)
@@ -83,9 +91,9 @@ public class InventoryManager : MonoBehaviour
             playerHealth.AddArmor(item.stats.armorBonus);
         }
 
-        // Damage bonus can be applied to player movement or attack system
         if (item.stats.damageBonus > 0)
         {
+            playerHealth.AddDamageBonus(item.stats.damageBonus);
             Debug.Log($"Damage bonus applied: +{item.stats.damageBonus}");
         }
     }
@@ -96,13 +104,26 @@ public class InventoryManager : MonoBehaviour
 
         if (item.stats.healthBonus > 0)
         {
-            playerHealth.MaxHealth -= item.stats.healthBonus;
-            playerHealth.Health = Mathf.Min(playerHealth.Health, playerHealth.MaxHealth);
+            // If healthBonus is 100 or more, restore the original max health
+            if (item.stats.healthBonus >= 100)
+            {
+                playerHealth.RestoreMaxHealth();
+            }
+            else
+            {
+                playerHealth.MaxHealth -= item.stats.healthBonus;
+                playerHealth.Health = Mathf.Min(playerHealth.Health, playerHealth.MaxHealth);
+            }
         }
 
         if (item.stats.armorBonus > 0)
         {
             playerHealth.AddArmor(-item.stats.armorBonus);
+        }
+
+        if (item.stats.damageBonus > 0)
+        {
+            playerHealth.RemoveDamageBonus(item.stats.damageBonus);
         }
     }
 
@@ -186,6 +207,10 @@ public class InventoryManager : MonoBehaviour
             slot.SetItem(uiItem);
             uiItem.SetParentSlot(slot);
             uiItem.transform.SetParent(slot.transform, false);
+            
+            // Apply item stats when picked up
+            ApplyItemStats(uiItem);
+            
             addedToInventory = true;
             break;
         }

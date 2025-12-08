@@ -4,11 +4,15 @@ public class PlayerHealth : MonoBehaviour
 {
     public float Health, MaxHealth;
     public float Armor; // Armor adds directly to total health display
+    public float DamageBonus = 0f; // Damage boost from items
     [SerializeField] private HealthBar healthBar;
     private bool isDefending = false;
+    
+    private float baseMaxHealth; // Store original max health for items that modify it
 
     void Start()
     {
+        baseMaxHealth = MaxHealth;
         healthBar.SetMaxHealth(MaxHealth);
         Health = MaxHealth;
         healthBar.SetHealth(Health);
@@ -54,6 +58,34 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    // Double the player's max health (for items)
+    public void DoubleMaxHealth()
+    {
+        MaxHealth *= 2f;
+        Health = MaxHealth;
+        
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(MaxHealth);
+            healthBar.SetHealth(Health);
+        }
+        Debug.Log("Max health doubled to: " + MaxHealth);
+    }
+
+    // Restore max health to base value (when unequipping item)
+    public void RestoreMaxHealth()
+    {
+        MaxHealth = baseMaxHealth;
+        Health = Mathf.Min(Health, MaxHealth);
+        
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(MaxHealth);
+            healthBar.SetHealth(Health);
+        }
+        Debug.Log("Max health restored to: " + MaxHealth);
+    }
+
     public void StartDefend()
     {
         isDefending = true;
@@ -65,5 +97,26 @@ public class PlayerHealth : MonoBehaviour
         isDefending = false;
     }
 
+    // Add damage bonus from items
+    public void AddDamageBonus(float amount)
+    {
+        DamageBonus += amount;
+        Debug.Log("Damage bonus increased to: " + DamageBonus);
+    }
+
+    // Remove damage bonus from items
+    public void RemoveDamageBonus(float amount)
+    {
+        DamageBonus -= amount;
+        DamageBonus = Mathf.Max(0, DamageBonus);
+        Debug.Log("Damage bonus reduced to: " + DamageBonus);
+    }
+
+    // Reset damage bonus to zero
+    public void ResetDamageBonus()
+    {
+        DamageBonus = 0f;
+        Debug.Log("Damage bonus reset to 0");
+    }
 }
 
