@@ -21,7 +21,8 @@ public class InventorySlot : MonoBehaviour, IDropHandler
         Chest,
         Legs,
         Hands,
-        Feet,
+        leftFoot,
+        rightFoot,
         Accessory
     }
 

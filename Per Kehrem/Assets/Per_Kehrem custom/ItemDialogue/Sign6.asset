@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4544b54bc65efe945b0795185569945c, type: 3}
+  m_Name: Sign6
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Sign
+  npcPortrait: {fileID: 7168540986364394743, guid: 80cd1236d51887d47a83ecc11325b30b,
+    type: 3}
+  dialogueLines:
+  - It reads, "Actually I lied, technically there's one more path here.
+  - Really though, the monster to the north is the only option.
+  - You can continue straight, but it's a dead end.
+  - So yeah buddy, better go over to that final boss."
+  typingSpeed: 0.05
+  voiceSounds: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  autoProgressDelay: 1.5
