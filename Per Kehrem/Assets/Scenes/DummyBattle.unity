@@ -644,9 +644,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   playerPhase: {fileID: 1216382245}
   attackPhase: {fileID: 1690122616}
-  boss: {fileID: 0}
-  hayBalePattern: {fileID: 0}
-  needlePattern: {fileID: 0}
+  boss: {fileID: 11767908}
+  hayBalePattern: {fileID: 131036510}
+  needlePattern: {fileID: 1259815959}
 --- !u!4 &233962799
 Transform:
   m_ObjectHideFlags: 0

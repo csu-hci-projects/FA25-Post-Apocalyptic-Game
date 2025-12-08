@@ -16,7 +16,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Start()
     {
-        playerHealth = FindObjectOfType<PlayerHealth>();
+        playerHealth = FindFirstObjectByType<PlayerHealth>();
         if (playerHealth == null)
             Debug.LogError("InventoryManager: PlayerHealth not found!");
 
