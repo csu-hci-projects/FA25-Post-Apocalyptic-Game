@@ -2,24 +2,18 @@ using UnityEngine;
 
 public class HayBale : MonoBehaviour
 {
-    public float speed = 50f;
-    public float rotationSpeed = 50f;
-    public PhaseManager phaseManager;
+    [SerializeField] private float speed = 5000f;
+    [SerializeField] private float rotationSpeed = 50f;
+    [SerializeField] private float lifetime = 3f;
 
-    void Start(){
-        Destroy(gameObject, 5f);
+    void Start()
+    {
+        Destroy(gameObject, lifetime);
     }
 
     void Update()
     {
         transform.Translate(Vector3.down * speed * Time.deltaTime, Space.World);
         transform.Rotate(Vector3.forward * -rotationSpeed * Time.deltaTime, Space.Self);
-    }
-
-    void OnDestroy()
-    {
-        if (phaseManager != null){
-            phaseManager.ShowPlayerPhase();
-        }
     }
 }
