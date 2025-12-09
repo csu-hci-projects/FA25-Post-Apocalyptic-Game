@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameData : MonoBehaviour
 {
@@ -13,7 +14,15 @@ public class GameData : MonoBehaviour
         public float damageBonus;
     }
 
+    [System.Serializable]
+    public class LocationData
+    {
+        public string sceneName;
+        public Vector3 playerPosition;
+    }
+
     public PlayerStats playerStats;
+    public LocationData locationData;
 
     private void Awake()
     {
@@ -26,6 +35,8 @@ public class GameData : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        // Listen for scene loads so we can restore player location when returning
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     /// <summary>
@@ -81,5 +92,105 @@ public class GameData : MonoBehaviour
     public void ClearPlayerStats()
     {
         playerStats = null;
+    }
+
+    /// <summary>
+    /// Save the player's current location before battle
+    /// </summary>
+    public void SaveLocation(Transform playerTransform)
+    {
+        if (playerTransform == null)
+        {
+            Debug.LogError("GameData: playerTransform is null!");
+            return;
+        }
+
+        locationData = new LocationData
+        {
+            sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name,
+            playerPosition = playerTransform.position
+        };
+
+        Debug.Log($"Location saved - Scene: {locationData.sceneName}, Position: {locationData.playerPosition}");
+    }
+
+    /// <summary>
+    /// Load the player back to their saved location after battle
+    /// </summary>
+    public void LoadLocation(Transform playerTransform)
+    {
+        if (playerTransform == null)
+        {
+            Debug.LogError("GameData: playerTransform is null!");
+            return;
+        }
+
+        if (locationData == null)
+        {
+            Debug.LogWarning("GameData: No location data to load!");
+            return;
+        }
+
+        playerTransform.position = locationData.playerPosition;
+        Debug.Log($"Location loaded - Position: {locationData.playerPosition}");
+    }
+
+    /// <summary>
+    /// Get the saved scene name
+    /// </summary>
+    public string GetSavedSceneName()
+    {
+        return locationData?.sceneName;
+    }
+
+    /// <summary>
+    /// Clear saved location
+    /// </summary>
+    public void ClearLocation()
+    {
+        locationData = null;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // If we have a saved location and the loaded scene matches, restore the player position
+        if (locationData == null) return;
+        if (scene.name != locationData.sceneName) return;
+
+        // Wait one frame to ensure player objects have been initialized in the scene
+        InstanceStartCoroutine(RestorePlayerNextFrame());
+    }
+
+    // Helper to start coroutine from a static context on the singleton instance
+    private void InstanceStartCoroutine(System.Collections.IEnumerator routine)
+    {
+        if (Instance != null)
+            Instance.StartCoroutine(routine);
+    }
+
+    private System.Collections.IEnumerator RestorePlayerNextFrame()
+    {
+        yield return null; // wait one frame
+
+        // Try to find PlayerHealth component
+        PlayerHealth playerHealth = FindFirstObjectByType<PlayerHealth>();
+        if (playerHealth == null)
+            playerHealth = FindObjectOfType<PlayerHealth>();
+
+        if (playerHealth != null)
+        {
+            LoadLocation(playerHealth.transform);
+            // Clear location so we don't reapply accidentally
+            ClearLocation();
+        }
+        else
+        {
+            Debug.LogWarning("GameData: Could not find PlayerHealth to restore location after scene load.");
+        }
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
