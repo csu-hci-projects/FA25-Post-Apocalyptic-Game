@@ -117,7 +117,7 @@ public class Dummy : MonoBehaviour, IInteractable
 
     private void StartBattle()
     {
-        // Find player and save their stats
+        // Find player and save their stats and location
         PlayerHealth playerHealth = FindFirstObjectByType<PlayerHealth>();
         if (playerHealth != null)
         {
@@ -130,7 +130,11 @@ public class Dummy : MonoBehaviour, IInteractable
 
             // Save player stats before transitioning
             GameData.Instance.SavePlayerStats(playerHealth);
-            Debug.Log("Player stats saved. Loading battle scene...");
+            
+            // Save player location (position and scene name)
+            GameData.Instance.SaveLocation(playerHealth.transform);
+            
+            Debug.Log("Player stats and location saved. Loading battle scene...");
         }
         else
         {

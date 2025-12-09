@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DummyBattle.unity
     guid: b9db3b0e71604d64384e7a4d34f86389
+  - enabled: 1
+    path: Assets/Scenes/ZombieBattle.unity
+    guid: c7cbe1d90fee1af44acdf02c9f7701ed
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
