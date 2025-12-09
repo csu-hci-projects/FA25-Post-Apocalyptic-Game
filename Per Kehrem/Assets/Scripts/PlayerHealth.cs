@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public float DamageBonus = 0f; // Damage boost from items
     [SerializeField] private HealthBar healthBar;
     private bool isDefending = false;
+    [SerializeField] private GameObject GameOverContainer;
     
     private float baseMaxHealth; // Store original max health for items that modify it
 
@@ -16,6 +17,8 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetMaxHealth(MaxHealth);
         Health = MaxHealth;
         healthBar.SetHealth(Health);
+        GameOverContainer.SetActive(false);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -32,6 +35,11 @@ public class PlayerHealth : MonoBehaviour
         Health -= damage;
         Health = Mathf.Clamp(Health, 0, MaxHealth);
         healthBar.SetHealth(Health);
+
+        if (Health <= 0)
+        {
+            FindObjectOfType<PhaseManager>().EndPlayerDefeat();
+        }
     }
 
     public void Heal(float amount)
