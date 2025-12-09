@@ -7503,6 +7503,8 @@ MonoBehaviour:
   dialogueText: {fileID: 134440799}
   nameText: {fileID: 1343445060}
   portraitImage: {fileID: 1139315525}
+  battleSceneName: DummyBattle
+  isBoss: 1
 --- !u!1 &637293282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 7277dd75e907b27448ec1de08238d0bb,
@@ -8573,6 +8575,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 500
+  animator: {fileID: 0}
+  walkThreshold: 0.01
 --- !u!50 &740445229
 Rigidbody2D:
   serializedVersion: 5
@@ -8734,7 +8738,9 @@ MonoBehaviour:
   Health: 20
   MaxHealth: 20
   Armor: 0
+  DamageBonus: 0
   healthBar: {fileID: 0}
+  GameOverContainer: {fileID: 0}
 --- !u!114 &740445232
 MonoBehaviour:
   m_ObjectHideFlags: 0

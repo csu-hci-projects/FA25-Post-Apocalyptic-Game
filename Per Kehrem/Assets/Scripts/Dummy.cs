@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Dummy : MonoBehaviour, IInteractable
 {
@@ -11,6 +12,12 @@ public class Dummy : MonoBehaviour, IInteractable
     public TMP_Text dialogueText;
     public TMP_Text nameText;
     public Image portraitImage;
+    
+    [Tooltip("Name of the battle scene to load (e.g., 'BattleScene')")]
+    public string battleSceneName = "BattleScene";
+    
+    [Tooltip("Is this NPC a boss that triggers a battle?")]
+    public bool isBoss = false;
 
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
@@ -95,13 +102,43 @@ public class Dummy : MonoBehaviour, IInteractable
 }
 
     public void EndDialogue()
-
     {
         StopAllCoroutines();
         isDialogueActive = false;
         dialogueText.SetText("");
         dialoguePanel.SetActive(false);
+        
+        // If this is a boss, transition to battle scene
+        if (isBoss)
+        {
+            StartBattle();
+        }
+    }
 
+    private void StartBattle()
+    {
+        // Find player and save their stats
+        PlayerHealth playerHealth = FindFirstObjectByType<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            // Ensure GameData exists
+            if (GameData.Instance == null)
+            {
+                GameObject gameDataObj = new GameObject("GameData");
+                gameDataObj.AddComponent<GameData>();
+            }
+
+            // Save player stats before transitioning
+            GameData.Instance.SavePlayerStats(playerHealth);
+            Debug.Log("Player stats saved. Loading battle scene...");
+        }
+        else
+        {
+            Debug.LogWarning("PlayerHealth not found! Cannot save stats.");
+        }
+
+        // Load the battle scene
+        SceneManager.LoadScene(battleSceneName);
     }
     
 }
