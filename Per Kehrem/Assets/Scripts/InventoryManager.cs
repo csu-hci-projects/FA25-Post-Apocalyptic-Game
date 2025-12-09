@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
@@ -10,6 +11,9 @@ public class InventoryManager : MonoBehaviour
     public InventorySlot[] equipmentSlots;
 
     public GameObject itemUIPrefab;
+    
+    [Tooltip("Assign the damage display text (optional).")]
+    public TextMeshProUGUI damageDisplayText;
 
     private PlayerHealth playerHealth;
     private Dictionary<InventorySlot.EquipmentType, Item> equippedItems = new Dictionary<InventorySlot.EquipmentType, Item>();
@@ -25,6 +29,8 @@ public class InventoryManager : MonoBehaviour
         {
             equippedItems[slot.equipmentType] = null;
         }
+        
+        UpdateDamageDisplay();
     }
 
     public void EquipItem(Item item, InventorySlot.EquipmentType equipmentType)
@@ -56,6 +62,7 @@ public class InventoryManager : MonoBehaviour
         ApplyItemStats(item);
 
         Debug.Log($"Equipped: {item.stats.itemName} to {equipmentType}");
+        UpdateDamageDisplay();
     }
 
     public void UnequipItem(InventorySlot.EquipmentType equipmentType)
@@ -65,6 +72,7 @@ public class InventoryManager : MonoBehaviour
             RemoveItemStats(equippedItems[equipmentType]);
             equippedItems[equipmentType] = null;
             Debug.Log($"Unequipped item from {equipmentType}");
+            UpdateDamageDisplay();
         }
     }
 
@@ -123,13 +131,21 @@ public class InventoryManager : MonoBehaviour
 
         if (item.stats.damageBonus > 0)
         {
-            playerHealth.RemoveDamageBonus(item.stats.damageBonus);
+            playerHealth.AddDamageBonus(-item.stats.damageBonus);
         }
     }
 
     public Item GetEquippedItem(InventorySlot.EquipmentType equipmentType)
     {
         return equippedItems[equipmentType];
+    }
+
+    private void UpdateDamageDisplay()
+    {
+        if (damageDisplayText != null && playerHealth != null)
+        {
+            damageDisplayText.text = $"Damage: {playerHealth.DamageBonus:F1}";
+        }
     }
     public void PickupItem(Item worldItem)
 {
@@ -210,6 +226,7 @@ public class InventoryManager : MonoBehaviour
             
             // Apply item stats when picked up
             ApplyItemStats(uiItem);
+            UpdateDamageDisplay();
             
             addedToInventory = true;
             break;
