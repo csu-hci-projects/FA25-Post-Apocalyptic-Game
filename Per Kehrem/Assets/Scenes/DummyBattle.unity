@@ -2795,7 +2795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2510, y: -400}
+  m_AnchoredPosition: {x: 2510, y: -416}
   m_SizeDelta: {x: 400, y: 320.1964}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1357702388
@@ -2818,10 +2818,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Don''t worry dawg, I''m not gonna kill you. You gotta learn somehow though. '
+  m_text: 'Don''t worry little one, I''m not gonna kill you. You gotta learn somehow. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a80cb125b48f13749a3fb17be16547eb, type: 2}
+  m_sharedMaterial: {fileID: 6662686604849274391, guid: a80cb125b48f13749a3fb17be16547eb,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
