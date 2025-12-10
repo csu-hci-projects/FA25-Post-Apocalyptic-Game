@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (Health <= 0)
         {
-            FindObjectOfType<PhaseManager>().EndPlayerDefeat();
+            FindObjectOfType<PhaseManager2>().EndPlayerDefeat();
         }
     }
 

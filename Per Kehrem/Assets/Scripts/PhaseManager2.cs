@@ -97,7 +97,7 @@ public class PhaseManager2 : MonoBehaviour
 
     public void LoadAgain()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Selvain");
     }
 }
 
