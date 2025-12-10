@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class BattleSceneInitializer : MonoBehaviour
 {
+    [Tooltip("Name of the boss being fought (e.g., 'Boss1', 'Boss2')")]
+    public string bossName;
+
     private void Start()
     {
         // Find the PlayerHealth component in the battle scene
@@ -33,6 +36,30 @@ public class BattleSceneInitializer : MonoBehaviour
         {
             Debug.LogError("GameData not found!");
             return;
+        }
+
+        // Increment battle return counter
+        GameData.Instance.IncrementBattleReturnCount();
+
+        // Report boss defeated to BossManager before returning (if it exists)
+        if (!string.IsNullOrEmpty(bossName))
+        {
+            // Search all MonoBehaviours in scene for one with ReportBossDefeatedByName method
+            MonoBehaviour[] allScripts = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None);
+            foreach (MonoBehaviour script in allScripts)
+            {
+                var reportMethod = script.GetType().GetMethod("ReportBossDefeatedByName");
+                if (reportMethod != null)
+                {
+                    reportMethod.Invoke(script, new object[] { bossName });
+                    Debug.Log("BattleSceneInitializer: Boss defeat reported for: " + bossName);
+                    break;
+                }
+            }
+        }
+        else
+        {
+            Debug.LogWarning("BattleSceneInitializer: bossName not assigned!");
         }
 
         string savedScene = GameData.Instance.GetSavedSceneName();

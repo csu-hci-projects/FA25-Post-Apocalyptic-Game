@@ -413,6 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd9090f0fefbd04d9e130cf7457e421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleSceneInitializer
+  bossName: Kelpie
 --- !u!4 &324212877
 Transform:
   m_ObjectHideFlags: 0
