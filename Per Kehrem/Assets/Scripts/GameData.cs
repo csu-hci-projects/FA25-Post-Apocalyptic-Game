@@ -24,6 +24,9 @@ public class GameData : MonoBehaviour
     public PlayerStats playerStats;
     public LocationData locationData;
 
+    // Track how many times player has returned from battle
+    public int battleReturnCount = 0;
+
     private void Awake()
     {
         // Singleton pattern - ensure only one instance exists
@@ -149,6 +152,24 @@ public class GameData : MonoBehaviour
     public void ClearLocation()
     {
         locationData = null;
+    }
+
+    /// <summary>
+    /// Increment the battle return counter when player returns from a battle
+    /// </summary>
+    public void IncrementBattleReturnCount()
+    {
+        battleReturnCount++;
+        Debug.Log($"GameData: Battle return count incremented to {battleReturnCount}");
+    }
+
+    /// <summary>
+    /// Reset the battle return counter
+    /// </summary>
+    public void ResetBattleReturnCount()
+    {
+        battleReturnCount = 0;
+        Debug.Log("GameData: Battle return count reset to 0");
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ZombieBattle.unity
     guid: c7cbe1d90fee1af44acdf02c9f7701ed
+  - enabled: 1
+    path: Assets/Scenes/FinalBoss.unity
+    guid: ba9db77cc7f58c24a945d691e453b363
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
