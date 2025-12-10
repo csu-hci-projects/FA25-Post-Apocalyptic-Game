@@ -19,7 +19,11 @@ public class RottenFleshPattern : MonoBehaviour, IAttackPattern
             new Vector3(-1f, -1f, 0f),
             new Vector3(1f, -1f, 0f),
             new Vector3(-1f, 1f, 0f),
-            new Vector3(1f, 1f, 0f)
+            new Vector3(1f, 1f, 0f),
+            new Vector3(-1f, -1f, 0f),
+            new Vector3(-1f, -1f, 0f),
+            Vector3.down,
+            Vector3.down
         };
 
         // Spawn each RottenFlesh with its direction
