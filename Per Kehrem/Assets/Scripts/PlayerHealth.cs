@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -38,9 +39,24 @@ public class PlayerHealth : MonoBehaviour
 
         if (Health <= 0)
         {
-            PhaseManager2 phaseManager = FindFirstObjectByType<PhaseManager2>();
-            if (phaseManager != null)
-                phaseManager.EndPlayerDefeat();
+            string currentScene = SceneManager.GetActiveScene().name;
+
+            if(currentScene == "DummyBattle")
+            {
+                PhaseManager phaseManager = FindFirstObjectByType<PhaseManager>();
+                if (phaseManager != null)
+                {
+                    phaseManager.EndPlayerDefeat();
+                }
+            }else
+            {
+                 PhaseManager2 phaseManager = FindFirstObjectByType<PhaseManager2>();
+                 if (phaseManager != null)
+                {
+                    phaseManager.EndPlayerDefeat();
+                }
+            }
+            
         }
     }
 

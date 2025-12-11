@@ -94,6 +94,11 @@ public class PhaseManager : MonoBehaviour
         attackPhase.SetActive(false);
         gameOverPhase.SetActive(true);
     }
+
+    public void LoadAgain()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }
 
 public interface IAttackPattern
