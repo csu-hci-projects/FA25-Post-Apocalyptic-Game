@@ -874,9 +874,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
-        m_MethodName: TryAgain
+      - m_Target: {fileID: 233962798}
+        m_TargetAssemblyTypeName: PhaseManager, Assembly-CSharp
+        m_MethodName: LoadAgain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
